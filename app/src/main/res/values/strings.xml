@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BxSciTransit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="timeStampLabel">Date and Time Stamp:  </string>
+    <string name="timeStamp"> </string>
+    <string name="Bx10">Bx10</string>
+    <string name="Bx28">Bx28</string>
+    <string name="distance">Distance from stop: </string>
+    <string name="distanceNum"> </string>
+    <string name="arrivalTime">Number of stops away: </string>
+    <string name="arrivalTimeNum"> </string>
+    <string name="refresh">Refresh</string>
+    <string name="stopName:">PAUL AVE. 205 ST.</string>
+
+
+</resources>

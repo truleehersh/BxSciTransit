@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timeStampLabel"
+        android:text="@string/timeStampLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/timeStamp"
+        android:text="@string/timeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/timeStampLabel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Bx10"
+        android:id="@+id/bx10"
+        android:layout_below="@+id/timeStampLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Bx28"
+        android:id="@+id/bx28"
+        android:layout_below="@+id/arrivalLabel10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distance"
+        android:id="@+id/distanceLabel28"
+        android:layout_below="@+id/bx10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distance"
+        android:id="@+id/distanceLabel10"
+        android:layout_below="@+id/bx28"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distanceNum"
+        android:id="@+id/distance28"
+        android:layout_below="@+id/bx28"
+        android:layout_toRightOf="@+id/distanceLabel10"
+        android:layout_toEndOf="@+id/distanceLabel10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distanceNum"
+        android:id="@+id/distance10"
+        android:layout_below="@+id/bx10"
+        android:layout_alignLeft="@+id/distance28"
+        android:layout_alignStart="@+id/distance28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrivalTime"
+        android:id="@+id/arrivalLabel10"
+        android:layout_below="@+id/distanceLabel28"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrivalTime"
+        android:id="@+id/arrivalLabel28"
+        android:layout_below="@+id/distanceLabel10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrivalTimeNum"
+        android:id="@+id/arrival28"
+        android:layout_alignTop="@+id/arrivalLabel28"
+        android:layout_toRightOf="@+id/arrivalLabel28"
+        android:layout_toEndOf="@+id/arrivalLabel28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrivalTimeNum"
+        android:id="@+id/arrival10"
+        android:layout_alignBottom="@+id/arrivalLabel10"
+        android:layout_alignLeft="@+id/arrival28"
+        android:layout_alignStart="@+id/arrival28" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh"
+        android:id="@+id/refresh"
+        android:layout_above="@+id/bx28"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bx10Pic"
+
+        android:src="@drawable/bx10"
+        android:layout_below="@+id/arrivalLabel28"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp"
+        android:layout_alignRight="@+id/timeStamp"
+        android:layout_alignEnd="@+id/timeStamp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/bx28"
+        android:layout_alignTop="@+id/bx10Pic"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bx10 Route"
+        android:id="@+id/textView"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bx28 Route"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/imageView"
+        android:layout_toRightOf="@+id/bx10Pic"
+        android:layout_toEndOf="@+id/bx10Pic"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+</RelativeLayout>
